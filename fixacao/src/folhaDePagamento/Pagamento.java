@@ -1,6 +1,7 @@
 package folhaDePagamento;
 
 import java.util.Scanner;
+import folhaDePagamento.Contracheque;
 
 
 public class Pagamento {
@@ -19,19 +20,22 @@ public class Pagamento {
 
         System.out.print("Taxa de Impostos: ");
         folha.taxa = tec.nextDouble();
-        tec.close();
-
+        
         System.out.println(" ");
         System.out.println(folha);
         System.out.println(" ");
-
-        System.out.print("Entre com a porcentagem de almento: ");
-        folha.porcentagem = tec.nextDouble();
-        folha.almento(porcentagem);
-        System.out.println(" ");
-
         
+        System.out.print("Entre com a porcentagem de almento: ");
+        double porcentagem = tec.nextDouble();
+        folha.almento(porcentagem);
 
 
+        System.out.println(" ");
+        System.out.println("Reajuste do "+ folha);
+       
+       
+       
+       
+       tec.close();
     }
 }

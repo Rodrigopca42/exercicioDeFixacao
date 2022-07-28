@@ -1,23 +1,18 @@
 package folhaDePagamento;
 
 public class Contracheque {
-
-    
-
-
-    
+     
     public String nome;    
     public double salarioBruto;
     public double taxa;
-    public double porcentagem;
+    
 
     public double valorLiquido(){
         return salarioBruto - taxa ;
     }
     
-    public double almento(double porcentagem){
-        double taxaDeAlmento = salarioBruto / 100 * porcentagem;
-        return valorLiquido() + taxaDeAlmento;
+    public void almento(double porcentagem){
+       salarioBruto += salarioBruto * porcentagem / 100;
     }
     
     public String toString(){
