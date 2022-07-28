@@ -1,6 +1,6 @@
 package retangulo;
 
-import java.nio.channels.AlreadyBoundException;
+
 import java.util.Scanner;
 import retangulo.Retangulos;
 
