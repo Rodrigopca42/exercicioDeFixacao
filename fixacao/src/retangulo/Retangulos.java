@@ -14,8 +14,7 @@ public class Retangulos {
         }
 
     public double diagonal(){
-       double catetos = largura * largura + altura * altura;
-        return Math.sqrt(catetos);
+       return Math.sqrt(largura * largura + altura * altura);
     }
 
 }
